@@ -5,6 +5,8 @@ from MLUtils import *
 
 st.title("Dr. Z.C.M.")
 st.title('AI integrated with TTE predicts the prognosis of patients undergoing non-cardiac surgery')  # 算法名称 and XXX
+st.write("""Age(year), Body Height(cm), Body weight(kg), BMI (Kg/m2), Cr (mg/dl), CCr (ml/min), Hemoglobin(HB), LA diameter, IVSd(mm), LVIDd(mm), LVPWD(mm), LVIDs(mm), EDV (cm3), ESV (cm3), EF(%), LVMi (g/m2), LAVi (ml), E (cm/s), Septal e’ (cm/s), Average E/ e’, Lateral e’ (cm/s), E/E' lateral, E' mean, RV S', RV s’ (cm/s), GENDER( 0-Male,1- Female),Diabetes mellitus(DM)(0-No,1-Yes), HTN(0-No,1-Yes), CAD(0-No,1-Yes), DL(0-No,1-Yes), CHF(0-No,1-Yes), CKD(0-No,1-Yes), Lee > 1(0-No,1-Yes), Cr > 2(0-No,1-Yes), Smoking(0-No,1-Yes).""")
+st.write("""Abbreviations: BMI, body mass index; CAD, coronary artery disease; CCr, clearance of creatinine; CHF, heart failure;Left ventricular ejection fraction (LVEF); left ventricular mass index (LVMi); left atrial volume index (LAVi));Left ventricular systolic diameter (LVIDs); left ventricular diastolic diameter(LVIDd); interventricular septal thickness(IVSd).""")
 
 COL_INPUT = [
     'Age', 'Gender', 'Body Height', 'Body weight', 'BMI',
