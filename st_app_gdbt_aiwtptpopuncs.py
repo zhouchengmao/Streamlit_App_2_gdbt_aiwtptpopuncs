@@ -108,8 +108,9 @@ def do_predict():
     # GradientBoosting
     pr = gdbt.predict(pocd_predict)
     pr = pr.astype(np.int)
-    st.markdown(r"$\color{red}{GradientBoosting}$ $\color{red}{Predict}$ $\color{red}{result}$ $\color{red}{" + str(
-        COL_Y[0]) + r"}$ $\color{red}{is}$ $\color{red}{" + str(pr[0]) + "}$")
+    prba = gdbt.predict_proba(pocd_predict)[:, 1]
+    prba = prba.astype(np.float)
+    st.markdown(r"$\color{red}{GradientBoosting}$ $\color{red}{Predict}$ $\color{red}{result}$ $\color{red}{%s}$ $\color{red}{is}$ $\color{red}{%d,}$ $\color{red}{the}$ $\color{red}{risk}$ $\color{red}{probability}$ $\color{red}{is}$ $\color{red}{%.3f}$" %(COL_Y[0], pr[0], prba[0]))
 
 
 if __name__ == "__main__":
